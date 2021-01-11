@@ -5,16 +5,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-        "type": "node",
-        "request": "launch",
-        "name": "Launch with chromedriver",
-        "program": "${workspaceFolder}/node_modules/.bin/wdio",
-        "windows": {
-            "program": "${workspaceFolder}/node_modules/@wdio/cli/bin/wdio.js"
-        },
-        "args": ["config/chromedriver.conf.js", "--spec", "basic"],
-        "autoAttachChildProcesses": true,
-        "console": "integratedTerminal"
+      "type": "node",
+      "request": "launch",
+      "name": "Launch with chromedriver",
+      "program": "${workspaceFolder}/node_modules/.bin/wdio",
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/@wdio/cli/bin/wdio.js"
+      },
+      "args": ["config/chromedriver.conf.js", "--spec", "${file}"],
+      "autoAttachChildProcesses": true,
+      "console": "integratedTerminal"
     },
     {
       "type": "node",
@@ -22,23 +22,23 @@
       "name": "Launch with devtools",
       "program": "${workspaceFolder}/node_modules/.bin/wdio",
       "windows": {
-          "program": "${workspaceFolder}/node_modules/@wdio/cli/bin/wdio.js"
+        "program": "${workspaceFolder}/node_modules/@wdio/cli/bin/wdio.js"
       },
       "args": ["config/devtools.conf.js", "--spec", "devtools-performance.ts"],
       "autoAttachChildProcesses": true,
       "console": "integratedTerminal"
     },
     {
-        "type": "node",
-        "request": "launch",
-        "name": "Launch with sauce",
-        "program": "${workspaceFolder}/node_modules/.bin/wdio",
-        "windows": {
-            "program": "${workspaceFolder}/node_modules/@wdio/cli/bin/wdio.js"
-        },
-        "args": ["config/sauce.conf.js"],
-        "autoAttachChildProcesses": true,
-        "console": "integratedTerminal"
-    },
+      "type": "node",
+      "request": "launch",
+      "name": "Launch with sauce",
+      "program": "${workspaceFolder}/node_modules/.bin/wdio",
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/@wdio/cli/bin/wdio.js"
+      },
+      "args": ["config/sauce.conf.js"],
+      "autoAttachChildProcesses": true,
+      "console": "integratedTerminal"
+    }
   ]
 }

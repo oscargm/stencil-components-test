@@ -1,9 +1,7 @@
-import { baseConfig as config } from './base.conf';
+import { baseConfig as config } from "./base.conf";
 
-config.services.push('chromedriver');
+config.services.push("chromedriver");
 
-config.specs = [
-    './test/specs/webdriver/**/*.ts'
-];
+config.specs = ["./test/specs/webdriver/**/*.ts"];
 
 export { config };

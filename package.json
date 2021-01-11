@@ -1,5 +1,5 @@
 {
-  "name": "wdio-mocha-typescript",
+  "name": "stencil-components-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,24 +7,26 @@
     "test:chromedriver": "npx wdio config/chromedriver.conf.js",
     "test:devtools": "npx wdio config/devtools.conf.js",
     "test:sauce": "npx wdio config/sauce.conf.js",
+    "allure": "allure generate reports --clean && allure open",
     "eslint": "npx eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pako88/wdio-mocha-typescript.git"
+    "url": "git+https://github.com/oscargm/stencil-components-test"
   },
   "keywords": [],
-  "author": "Pascal Koenig",
+  "author": "Óscar Garcia Masiá",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pako88/wdio-mocha-typescript/issues"
+    "url": "https://github.com/oscargm/stencil-components-test/issues"
   },
-  "homepage": "https://github.com/pako88/wdio-mocha-typescript#readme",
+  "homepage": "https://github.com/oscargm/stencil-components-test#readme",
   "devDependencies": {
     "@types/mocha": "^8.0.3",
     "@types/node": "^14.14.6",
     "@typescript-eslint/eslint-plugin": "^4.6.1",
     "@typescript-eslint/parser": "^4.6.1",
+    "@wdio/allure-reporter": "^6.11.0",
     "@wdio/cli": "^6.7.2",
     "@wdio/devtools-service": "^6.6.6",
     "@wdio/local-runner": "^6.7.2",
@@ -32,6 +34,7 @@
     "@wdio/sauce-service": "^6.7.2",
     "@wdio/spec-reporter": "^6.7.0",
     "@wdio/sync": "^6.7.2",
+    "allure-commandline": "^2.13.8",
     "chromedriver": "^86.0.0",
     "eslint": "^7.13.0",
     "html-dnd": "^1.2.1",

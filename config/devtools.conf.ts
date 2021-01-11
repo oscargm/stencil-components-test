@@ -1,9 +1,7 @@
-import { baseConfig as config } from './base.conf';
+import { baseConfig as config } from "./base.conf";
 
-config.services.push('devtools');
+config.services.push("devtools");
 
-config.specs = [
-    './test/specs/cdp/**/*.ts'
-];
+config.specs = ["./test/specs/cdp/**/*.ts"];
 
 export { config };

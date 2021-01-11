@@ -1,2 +1,4 @@
 node_modules/
 logs/
+reports/
+allure-report/
