@@ -4,7 +4,7 @@ Project based on [wdio-mocha-typescript](https://github.com/pako88/wdio-mocha-ty
 
 ## Instructions
 
-To run these tests you need to be running storybook (`npm run storybook`) on [stencil-components](https://github.com/oscargm/stencil-components) in your local machine.
+To run these tests you need to be running [stencil-components](https://github.com/oscargm/stencil-components) storybook (`npm run storybook`) in your local machine.
 
 To run the tests:
 
