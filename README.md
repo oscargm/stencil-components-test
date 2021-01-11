@@ -10,7 +10,7 @@ To run the tests:
 
 ```bash
 # Clone the repository
-git clone https://github.com/oscargm/stencil-components-test
+git clone https://github.com/oscargm/stencil-components-test && cd stencil-components-test
 # Install dependencies
 npm i
 # Run the tests
